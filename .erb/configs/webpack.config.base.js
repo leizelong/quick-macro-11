@@ -7,7 +7,7 @@ import webpack from 'webpack';
 import { dependencies as externals } from '../../src/package.json';
 
 export default {
-  externals: [...Object.keys(externals || {}), 'iohook'],
+  externals: [...Object.keys(externals || {}), 'iohook', 'robotjs'],
 
   module: {
     rules: [
